@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nelum Spa - Catálogo de servicios</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <img src="assets/logo.png" style="margin-bottom: 2rem; max-height: 80%;">
+        <p>Experiencia de Bienestar Exclusiva</p>
+    </header>
+
+    <div class="nav-container">
+        <nav class="nav">
+            <button class="nav-btn active" onclick="scrollToSection('generales', this)">Generales</button>
+            <button class="nav-btn" onclick="scrollToSection('faciales', this)">Faciales</button>
+            <button class="nav-btn" onclick="scrollToSection('corporales', this)">Corporales</button>
+            <button class="nav-btn" onclick="scrollToSection('armonizacion', this)">Armonización</button>
+            <button class="nav-btn" onclick="scrollToSection('cejas', this)">Cejas & Pestañas</button>
+            <button class="nav-btn" onclick="scrollToSection('podologia', this)">Podología</button>
+        </nav>
+    </div>
+
+    <main class="container">
+        <!-- Servicios Generales -->
+        <section id="generales" class="section fade-in">
+            <h2 class="section-title">💉 Servicios Generales</h2>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div>
+                        <div class="service-name">Suero de Vitaminas</div>
+                        <p class="service-description">Soluciones intravenosas con vitaminas, minerales y aminoácidos. Mejora el sistema inmunológico, aumenta niveles de energía, mejora función cognitiva y acelera cicatrización.</p>
+                    </div>
+                    <div class="service-price">$2.000</div>
+                </div>
+
+                <div class="service-card">
+                    <div>
+                        <div class="service-name">Suero de Hierro Intravenoso</div>
+                        <p class="service-description">Rápida biodisponibilidad para eritropoyesis. Tratamiento eficaz y seguro para corregir anemia. Superior a suplementos orales en eficacia y tolerancia.</p>
+                    </div>
+                    <div class="service-price">$2.500</div>
+                </div>
+            </div>
+
+            <h3 class="subtitle-premium">Depilación Láser Diodo</h3>
+            <div class="info-box">
+                Tecnología más empleada en eliminación permanente del vello. Versátil para todo tipo de pieles, desde claras hasta morenas. Utiliza luz altamente concentrada para destruir el vello de manera permanente.
+            </div>
+
+            <div class="price-list">
+                <div class="price-item"><span class="item-name">Barbilla</span> <span class="item-price">$5.00</span></div>
+                <div class="price-item"><span class="item-name">Bigote</span> <span class="item-price">$5.00</span></div>
+                <div class="price-item"><span class="item-name">Cuello</span> <span class="item-price">$10.00</span></div>
+                <div class="price-item"><span class="item-name">Patilla</span> <span class="item-price">$5.00</span></div>
+                <div class="price-item"><span class="item-name">Mejillas</span> <span class="item-price">$8.00</span></div>
+                <div class="price-item"><span class="item-name">Brazos</span> <span class="item-price">$20.00</span></div>
+                <div class="price-item"><span class="item-name">Escote</span> <span class="item-price">$10.00</span></div>
+                <div class="price-item"><span class="item-name">Axilas</span> <span class="item-price">$20.00</span></div>
+                <div class="price-item"><span class="item-name">Senos</span> <span class="item-price">$10.00</span></div>
+                <div class="price-item"><span class="item-name">Abdomen</span> <span class="item-price">$20.00</span></div>
+                <div class="price-item"><span class="item-name">Línea Alba</span> <span class="item-price">$5.00</span></div>
+                <div class="price-item"><span class="item-name">Biquini</span> <span class="item-price">$20.00</span></div>
+                <div class="price-item"><span class="item-name">Zona Íntima Completa</span> <span class="item-price">$25.00</span></div>
+                <div class="price-item"><span class="item-name">Pierna Completa</span> <span class="item-price">$40.00</span></div>
+                <div class="price-item"><span class="item-name">Medias Piernas</span> <span class="item-price">$20.00</span></div>
+                <div class="price-item"><span class="item-name">Muslos</span> <span class="item-price">$25.00</span></div>
+                <div class="price-item"><span class="item-name">Muslos Parte Trasera</span> <span class="item-price">$15.00</span></div>
+                <div class="price-item"><span class="item-name">Glúteos</span> <span class="item-price">$25.00</span></div>
+            </div>
+            <span class="note-badge">*Pago en USD o al cambio actual</span>
+
+            <h3 class="subtitle-premium">IPL - Luz Pulsada Intensa</h3>
+            <div class="info-box">
+                Método de fotodepilación que debilita e inhibe el crecimiento del pelo a través de pulsaciones de luz que abarcan superficie amplia.
+            </div>
+            <div class="price-list">
+                <div class="price-item"><span class="item-name">Rostro</span> <span class="item-price">$1.200</span></div>
+                <div class="price-item"><span class="item-name">Bigote</span> <span class="item-price">$700</span></div>
+                <div class="price-item"><span class="item-name">Barbilla</span> <span class="item-price">$1.000</span></div>
+                <div class="price-item"><span class="item-name">Axila</span> <span class="item-price">$2.000</span></div>
+                <div class="price-item"><span class="item-name">Ombligo</span> <span class="item-price">$700</span></div>
+                <div class="price-item"><span class="item-name">Bikini</span> <span class="item-price">$2.000</span></div>
+                <div class="price-item"><span class="item-name">Brasileña</span> <span class="item-price">$2.500</span></div>
+                <div class="price-item"><span class="item-name">Integral</span> <span class="item-price">$3.000</span></div>
+                <div class="price-item"><span class="item-name">Brazos</span> <span class="item-price">$4.000</span></div>
+                <div class="price-item"><span class="item-name">Piernas</span> <span class="item-price">$4.000</span></div>
+                <div class="price-item"><span class="item-name">Muslos</span> <span class="item-price">$4.000</span></div>
+                <div class="price-item"><span class="item-name">Toda la Pierna</span> <span class="item-price">$7.000</span></div>
+            </div>
+
+            <h3 class="subtitle-premium">Retirada de Tatuajes</h3>
+            <div class="info-box">
+                Láser Q-switched que fragmenta las moléculas de tinta en micropartículas absorbidas por el organismo. Efectivo contra todos los colores. Elimina tatuajes sin dejar señales en la piel.
+            </div>
+            <div class="price-list">
+                <div class="price-item"><span class="item-name">4x4 cm</span> <span class="item-price">$2.000</span></div>
+                <div class="price-item"><span class="item-name">7x7 cm</span> <span class="item-price">$2.500</span></div>
+                <div class="price-item"><span class="item-name">10x10 cm</span> <span class="item-price">$3.000</span></div>
+                <div class="price-item"><span class="item-name">Cejas</span> <span class="item-price">$2.000</span></div>
+            </div>
+
+            <h3 class="subtitle-premium">Tratamiento de Várices</h3>
+            <div class="price-list">
+                <div class="price-item"><span class="item-name">IPL - Técnica no invasiva</span> <span class="item-price">$2.000 - $5.000</span></div>
+                <div class="price-item"><span class="item-name">Esclerosis</span> <span class="item-price">$8.000 - $10.000</span></div>
+            </div>
+
+            <h3 class="subtitle-premium">Tratamiento de Queloides</h3>
+            <div class="price-list">
+                <div class="price-item"><span class="item-name">Triamcinolona 1cc - 3 sesiones (4-6 semanas entre cada una)</span> <span class="item-price">$2.500</span></div>
+            </div>
+
+            <h3 class="subtitle-premium">Tratamiento para Hiperpigmentación</h3>
+            <div class="info-box">
+                Tratamientos para reducir manchas solares, pecas y melasma. Estimulan la desintegración de melanina logrando tono de piel más uniforme.
+            </div>
+            <div class="price-list">
+                <div class="price-item"><span class="item-name">IPL - Reduce manchas en pocas sesiones</span> <span class="item-price">$1.000 - $2.000</span></div>
+                <div class="price-item"><span class="item-name">Láser YAG - Sin cicatrices</span> <span class="item-price">$1.000 - $2.000</span></div>
+                <div class="price-item"><span class="item-name">Plasma Pen - Tono uniforme y luminoso</span> <span class="item-price">$1.000 - $1.500</span></div>
+            </div>
+
+            <h3 class="subtitle-premium">Tratamiento de Estrías</h3>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div>
+                        <div class="service-name">Plasma Pen</div>
+                        <p class="service-description">Estimula producción de colágeno mejorando textura y apariencia de la piel.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="price-list">
+                <div class="price-item"><span class="item-name">Abdomen</span> <span class="item-price">$2.000 - $2.500</span></div>
+                <div class="price-item"><span class="item-name">Caderas</span> <span class="item-price">$2.000</span></div>
+                <div class="price-item"><span class="item-name">Glúteos</span> <span class="item-price">$2.000 - $2.500</span></div>
+                <div class="price-item"><span class="item-name">Muslos</span> <span class="item-price">$2.000</span></div>
+            </div>
+
+            <div class="services-grid" style="margin-top: 1.5rem;">
+                <div class="service-card">
+                    <div>
+                        <div class="service-name">Plasma Rico en Plaquetas (PRP)</div>
+                        <p class="service-description">Muy efectivo para estrías. Elimina estrías nuevas y mejora estrías blancas.</p>
+                    </div>
+                    <div class="service-price">$3.500</div>
+                </div>
+            </div>
+
+            <h3 class="subtitle-premium">Tratamientos Capilares</h3>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div>
+                        <div class="service-name">Plasma Rico en Plaquetas (PRP)</div>
+                        <p class="service-description">Bioestimulación capilar que regenera tejidos. Mejora circulación, aumenta proliferación celular de folículos pilosos y favorece producción de colágeno.</p>
+                    </div>
+                    <div class="service-price">$3.500</div>
+                </div>
+
+                <div class="service-card">
+                    <div>
+                        <div class="service-name">Alta Frecuencia (AF)</div>
+                        <p class="service-description">Energía electromagnética que estimula crecimiento y regeneración capilar. Previene caída del cabello.</p>
+                    </div>
+                    <div class="service-price">$1.000</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios Faciales -->
+        <section id="faciales" class="section">
+            <h2 class="section-title">✨ Servicios Faciales</h2>
+            
+            <h3 class="subtitle-premium">Limpieza Facial Profesional</h3>
+            <div class="info-box">
+                Limpieza profunda que libera la piel de impurezas, desechos y comedones. Recomendada cada 30 días según tipo de piel.
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div>
+                        <div class="service-name">Limpieza Simple</div>
+                        <p class="service-description">Limpieza, extracción, mascarilla y alta frecuencia.</p>
+                    </div>
+                    <div class="service-price">$2.000</div>
+                </div>
+
+                <div class="service-card">
+                    <div>
+                        <div class="service-name">Limpieza Plus</div>
+                        <p class="service-description">Limpieza, microdermoabrasión, extracción, mascarilla, alta frecuencia y terapia LED.</p>
+                    </div>
+                    <div class="service-price">$3.000</div>
+                </div>
+
+                <div class="service-card">
+                    <div>
+                        <div class="service-name">Limpieza Premium</div>
+                        <p class="service-description">Limpieza, microdermoabrasión, extracción, mascarilla, alta frecuencia, terapia LED, hidratación de labios, masaje capilar y facial.</p>
+                    </div>
+                    <div class="service-price">$5.000</div>
+                </div>
+            </div>
+
+            <h3 class="subtitle-premium">Dermapen</h3>
+            <div class="info-box">
+                42 microagujas para administrar tratamientos en la dermis. Reafirma, rellena líneas finas, retexturiza y aumenta elasticidad. Seguro para todo tipo de piel.
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div>
+                        <div class="service-name">Dermapen con PRP</div>
+                        <p class="service-description">Plasma Rico en Plaquetas administrado directamente en la dermis para máximos resultados.</p>
+                    </div>
+                    <div class="service-price">$3.500</div>
+                </div>
+
+                <div class="service-card">
+                    <div>
+                        <div class="service-name">Dermapen con Activos</div>
+                        <p class="service-description">Ácido Hialurónico, Vitamina C, Péptidos y Retinol. Mejora hidratación y textura de la piel.</p>
+                    </div>
+                    <div class="service-price">$2.500</div>
+                </div>
+            </div>
+
+            <h3 class="subtitle-premium">Tratamientos Especializados</h3>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div>
+                        <div class="service-name">Tratamiento para Acné</div>
+                        <p class="service-description">IPL, Alta Frecuencia y LED. Elimina bacterias, reduce inflamación y acelera curación de lesiones.</p>
+                    </div>
+                    <div class="service-price">$1.500</div>
+                </div>
+
+                <div class="service-card">
+                    <div>
+                        <div class="service-name">Tratamiento Antiarrugas</div>
+                        <p class="service-description">LED, Radiofrecuencia e IPL. Estimula colágeno, mejora elasticidad y suaviza arrugas.</p>
+                    </div>
+                    <div class="service-price">$1.500</div>
+                </div>
+
+                <div class="service-card">
+                    <div>
+                        <div class="service-name">Tratamiento de Rosácea (IPL)</div>
+                        <p class="service-description">Reduce enrojecimiento y mejora uniformidad del tono de piel. Mejora significativa en varias sesiones.</p>
+                    </div>
+                    <div class="service-price">$1.500 - $2.000</div>
+                </div>
+
+                <div class="service-card">
+                    <div>
+                        <div class="service-name">Dermaplaning</div>
+                        <p class="service-description">Exfoliación física con bisturí que mejora brillo y textura de la piel.</p>
+                    </div>
+                    <div class="service-price">$1.500</div>
+                </div>
+
+                <div class="service-card">
+                    <div>
+                        <div class="service-name">Hidratación de Labios</div>
+                        <p class="service-description">Dermapen con ácido hialurónico para labios más sanos e hidratados.</p>
+                    </div>
+                    <div class="service-price">$1.500</div>
+                </div>
+            </div>
+
+            <h3 class="subtitle-premium">Tratamientos para Melasma</h3>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div>
+                        <div class="service-name">Dermapen con PRP</div>
+                        <p class="service-description">Estimula producción de colágeno para reducción de manchas.</p>
+                    </div>
+                    <div class="service-price">$3.500</div>
+                </div>
+
+                <div class="service-card">
+                    <div>
+                        <div class="service-name">Microdermoabrasión</div>
+                        <p class="service-description">Exfolia piel eliminando células muertas. Reducción progresiva de manchas.</p>
+                    </div>
+                    <div class="service-price">$2.000</div>
+                </div>
+
+                <div class="service-card">
+                    <div>
+                        <div class="service-name">Hollywood Peeling</div>
+                        <p class="service-description">Reduce manchas y pigmentación ofreciendo tono de piel más uniforme.</p>
+                    </div>
+                    <div class="service-price">$3.000</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios Corporales -->
+        <section id="corporales" class="section">
+            <h2 class="section-title">💆 Servicios Corporales</h2>
+            
+            <h3 class="subtitle-premium">Masajes Terapéuticos</h3>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div>
+                        <div class="service-name">Masaje Relajante</div>
+                        <p class="service-description">Técnicas manuales para reducir estrés, aliviar tensiones musculares y mejorar bienestar general.</p>
+                    </div>
+                    <div class="service-price">$2.500</div>
+                </div>
+
+                <div class="service-card">
+                    <div>
+                        <div class="service-name">Masaje Descontracturante - General</div>
+                        <p class="service-description">Masaje completo para aliviar contracturas y tensión muscular profunda.</p>
+                    </div>
+                    <div class="service-price">$3.500</div>
+                </div>
+
+                <div class="service-card">
+                    <div>
+                        <div class="service-name">Masaje Descontracturante - Espalda</div>
+                        <p class="service-description">Enfocado en zona de espalda para aliviar tensión localizada.</p>
+                    </div>
+                    <div class="service-price">$1.200</div>
+                </div>
+
+                <div class="service-card">
+                    <div>
+                        <div class="service-name">Reflexología</div>
+                        <p class="service-description">Terapia de zonas reflejas con presión en pies y manos con técnicas de pulgar y dedo.</p>
+                    </div>
+                    <div class="service-price">$800</div>
+                </div>
+            </div>
+
+            <h3 class="subtitle-premium">Masaje Reductor</h3>
+            <div class="info-box">
+                Masaje fuerte y firme para romper adipocitos en zona a tratar.
+            </div>
+            <div class="price-list">
+                <div class="price-item"><span class="item-name">Abdomen</span> <span class="item-price">$300</span></div>
+                <div class="price-item"><span class="item-name">Espalda</span> <span class="item-price">$300</span></div>
+                <div class="price-item"><span class="item-name">Muslos</span> <span class="item-price">$550</span></div>
+                <div class="price-item"><span class="item-name">Brazos</span> <span class="item-price">$300</span></div>
+                <div class="price-item"><span class="item-name">Oblicuos</span> <span class="item-price">$300</span></div>
+                <div class="price-item"><span class="item-name">Glúteos</span> <span class="item-price">$400</span></div>
+                <div class="price-item"><span class="item-name">Caderas</span> <span class="item-price">$300</span></div>
+                <div class="price-item"><span class="item-name">Abductores</span> <span class="item-price">$250</span></div>
+            </div>
+
+            <h3 class="subtitle-premium">Maderoterapia</h3>
+            <div class="info-box">
+                Técnica con herramientas de madera para mejorar circulación sanguínea, reducir celulitis, eliminar toxinas y tonificar músculos.
+            </div>
+            <div class="price-list">
+                <div class="price-item"><span class="item-name">Brazos</span> <span class="item-price">$400</span></div>
+                <div class="price-item"><span class="item-name">Abdomen</span> <span class="item-price">$500</span></div>
+                <div class="price-item"><span class="item-name">Oblicuos con Cinturón</span> <span class="item-price">$400</span></div>
+                <div class="price-item"><span class="item-name">Espalda</span> <span class="item-price">$450</span></div>
+                <div class="price-item"><span class="item-name">Muslos Anteriores</span> <span class="item-price">$450</span></div>
+                <div class="price-item"><span class="item-name">Glúteos</span> <span class="item-price">$250</span></div>
+                <div class="price-item"><span class="item-name">Muslos Posteriores</span> <span class="item-price">$250</span></div>
+                <div class="price-item"><span class="item-name">Glúteos y Muslos Posteriores</span> <span class="item-price">$500</span></div>
+                <div class="price-item"><span class="item-name">Caderas</span> <span class="item-price">$400</span></div>
+                <div class="price-item"><span class="item-name">Abductores</span> <span class="item-price">$300</span></div>
+            </div>
+
+            <h3 class="subtitle-premium">Cavitación</h3>
+            <div class="info-box">
+                Técnica no quirúrgica con ultrasonido de bajas frecuencias para eliminar grasa localizada disolviendo células adiposas desde su interior.
+            </div>
+            <div class="price-list">
+                <div class="price-item"><span class="item-name">Abdomen</span> <span class="item-price">$700</span></div>
+                <div class="price-item"><span class="item-name">Miembro Superior</span> <span class="item-price">$600</span></div>
+                <div class="price-item"><span class="item-name">Miembro Inferior</span> <span class="item-price">$900</span></div>
+            </div>
+
+            <h3 class="subtitle-premium">Radiofrecuencia Corporal</h3>
+            <div class="info-box">
+                Tratamiento innovador para combatir flacidez, grasa acumulada y celulitis.
+            </div>
+            <div class="price-list">
+                <div class="price-item"><span class="item-name">Abdomen</span> <span class="item-price">$700</span></div>
+                <div class="price-item"><span class="item-name">Miembros Superiores</span> <span class="item-price">$600</span></div>
+                <div class="price-item"><span class="item-name">Miembros Inferiores</span> <span class="item-price">$900</span></div>
+            </div>
+        </section>
+
+        <!-- Armonización Facial -->
+        <section id="armonizacion" class="section">
+            <h2 class="section-title">💎 Armonización Facial</h2>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div>
+                        <div class="service-name">Relleno con Ácido Hialurónico</div>
+                        <p class="service-description">Tratamiento estético para hidratar, restaurar volumen y mejorar apariencia de piel y labios (1cc).</p>
+                    </div>
+                    <div class="service-price">$140 USD</div>
+                </div>
+
+                <div class="service-card">
+                    <div>
+                        <div class="service-name">Toxina Botulínica</div>
+                        <p class="service-description">Previene y suaviza arrugas dinámicas causadas por contracción repetitiva de músculos faciales (1cc).</p>
+                    </div>
+                    <div class="service-price">$150 USD</div>
+                </div>
+
+                <div class="service-card">
+                    <div>
+                        <div class="service-name">Bioestimuladores de Colágeno</div>
+                        <p class="service-description">Tratamiento inyectable que estimula producción natural de colágeno mejorando firmeza, elasticidad y textura de manera progresiva.</p>
+                    </div>
+                    <div class="service-price">$150 USD</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cejas y Pestañas -->
+        <section id="cejas" class="section">
+            <h2 class="section-title">👁️ Servicio de Cejas y Pestañas</h2>
+            
+            <div class="price-list">
+                <div class="price-item"><span class="item-name">Diseño Clásico</span> <span class="item-price">$2.000</span></div>
+                <div class="price-item"><span class="item-name">Diseño 2D</span> <span class="item-price">$2.300</span></div>
+                <div class="price-item"><span class="item-name">Diseño 3D</span> <span class="item-price">$2.500</span></div>
+                <div class="price-item"><span class="item-name">Depilación de Cejas</span> <span class="item-price">$150</span></div>
+                <div class="price-item"><span class="item-name">Tinte Henna de Cejas</span> <span class="item-price">$250</span></div>
+                <div class="price-item"><span class="item-name">Laminado de Cejas</span> <span class="item-price">$800</span></div>
+            </div>
+        </section>
+
+        <!-- Podología -->
+        <section id="podologia" class="section">
+            <h2 class="section-title">🦶 Servicio de Podología</h2>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div>
+                        <div class="service-name">Podología</div>
+                        <p class="service-description">Servicio profesional de cuidado integral de pies.</p>
+                    </div>
+                    <div class="service-price">$800</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p style="font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 1rem;">✨ Nelum Spa ✨</p>
+        <p>Tu bienestar es nuestra prioridad</p>
+        <p style="margin-top: 2rem; font-size: 0.8rem; opacity: 0.7;">&copy; 2026 Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/js.js"></script>
+</body>
+</html>
