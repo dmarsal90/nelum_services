@@ -70,10 +70,24 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+}
+
+.nav-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255,255,255,0.9), transparent);
+    pointer-events: none; /* Permite tocar a través de la sombra */
+    z-index: 1001;
 }
 
 .nav {
@@ -82,15 +96,17 @@ body {
     display: flex;
     gap: 0.6rem;
     overflow-x: auto;
-    padding: 0.8rem 1rem;
-    scrollbar-width: none; /* Firefox */
+    padding: 0.8rem 1.2rem;
+    /* Ocultar scrollbar pero mantener funcionalidad */
+    scrollbar-width: none; 
     -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
 }
 
-.nav::-webkit-scrollbar { display: none; } /* Chrome/Safari */
+.nav::-webkit-scrollbar { display: none; }
 
 .nav-btn {
-    flex-shrink: 0; /* Evita que los botones se achiquen */
+    flex-shrink: 0;
     padding: 0.6rem 1.1rem;
     background: white;
     border: 1px solid rgba(149, 199, 153, 0.3);
@@ -104,7 +120,12 @@ body {
     align-items: center;
     gap: 6px;
     transition: all 0.3s ease;
-    box-shadow: var(--shadow-sm);
+}
+
+/* Ajuste para que el degradado no tape el último botón cuando llegas al final */
+.nav::after {
+    content: '';
+    padding-right: 40px; /* Espacio extra al final del scroll */
 }
 
 .nav-btn.active {

@@ -12,9 +12,12 @@ function scrollToSection(sectionId, element) {
             behavior: 'smooth'
         });
 
-        // Actualizar estado activo inmediatamente
+        // Actualizar estado activo
         document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
         element.classList.add('active');
+        
+        // Centrar el botón en el menú horizontal
+        element.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
     }
 }
 
@@ -35,26 +38,25 @@ const updateActiveNav = () => {
 
     document.querySelectorAll('.nav-btn').forEach(btn => {
         btn.classList.remove('active');
-        // Comprobamos si el atributo onclick contiene el ID de la sección actual
         if (btn.getAttribute('onclick').includes(`'${current}'`)) {
             btn.classList.add('active');
+            // ESTA LÍNEA HACE LA MAGIA: Centra el botón activo automáticamente al hacer scroll
+            btn.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
         }
     });
 };
 
 /**
- * EFECTO MÓVIL: Resaltar tarjetas al pasar por el centro de la pantalla
- * Esto simula el efecto "hover" mientras el usuario hace scroll.
+ * EFECTO MÓVIL: Resaltar tarjetas al pasar por el centro
  */
 const initMobileScrollHighlight = () => {
     const options = {
         root: null,
-        rootMargin: '-15% 0px -15% 0px', // Se activa cuando está cerca del centro
+        rootMargin: '-15% 0px -15% 0px',
         threshold: 0.6
     };
 
     const observer = new IntersectionObserver((entries) => {
-        // Solo aplicar si la pantalla es de móvil/tablet
         if (window.innerWidth <= 768) {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -71,16 +73,8 @@ const initMobileScrollHighlight = () => {
     });
 };
 
-// Event Listeners
 window.addEventListener('scroll', updateActiveNav);
 window.addEventListener('load', () => {
     updateActiveNav();
     initMobileScrollHighlight();
-});
-
-// Re-inicializar si cambian el tamaño de la pantalla
-window.addEventListener('resize', () => {
-    if (window.innerWidth > 768) {
-        document.querySelectorAll('.service-card').forEach(c => c.classList.remove('touch-active'));
-    }
 });
